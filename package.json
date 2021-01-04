@@ -17,9 +17,7 @@
     "start": "webpack serve --config webpack.dev.js --mode development",
     "start:dist": "http-server dist --port ${PORT:-8080}",
     "build": "webpack --config webpack.prod.js --mode production",
-    "preview": "npm run build && npm run start:dist",
-    "test": "standard",
-    "cy:run": "cypress run"
+    "preview": "npm run build && npm run start:dist"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.8",
@@ -28,7 +26,6 @@
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.1",
-    "cypress": "^6.1.0",
     "file-loader": "^6.2.0",
     "html-loader": "^1.3.2",
     "html-webpack-plugin": "^4.5.0",
@@ -42,14 +39,5 @@
     "webpack": "^4.44.2",
     "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^3.11.0"
-  },
-  "standard": {
-    "ignore": [
-      "cypress"
-    ],
-    "env": [
-      "node",
-      "es6"
-    ]
   }
 }
